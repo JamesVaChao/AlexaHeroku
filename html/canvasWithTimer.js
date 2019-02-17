@@ -1,5 +1,5 @@
 //connect to server and retain the socket
-let socket = io('https://' + window.document.location.host)
+let socket = io('http://' + window.document.location.host)
 
 //Create default stones and players
 var stones = [];
