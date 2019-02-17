@@ -1,5 +1,12 @@
 //connect to server and retain the socket
-let socket = io('http://' + window.document.location.host)
+var socket
+if(window.document.location.host == "localhost:3000"){
+   socket = io('http://' + window.document.location.host)
+}else{
+  socket = io('https://' + window.document.location.host)
+
+}
+console.log("window document host: " + window.document.location.host);
 
 //Create default stones and players
 var stones = [];

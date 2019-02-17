@@ -1,8 +1,16 @@
-const app = require('http').createServer(handler) //
+var app;
+if(process.env.port){
+     app = require('https').createServer(handler) //
+
+}
+else{
+ app = require('http').createServer(handler) //
+}
 const io = require('socket.io')(app) //wrap server app in socket io capability
 const fs = require('fs') //file system to server static files
 const url = require('url'); //to parse url strings
 const PORT = process.env.PORT || 3000 //useful if you want to specify port through environment variable
+console.log("process env " + process.env.PORT);
 
 const ROOT_DIR = 'html' //dir to serve static files from
 
