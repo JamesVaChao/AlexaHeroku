@@ -1,4 +1,4 @@
-const app = require('http').createServer(handler) //
+const app = require('https').createServer(handler) //
 const io = require('socket.io')(app) //wrap server app in socket io capability
 const fs = require('fs') //file system to server static files
 const url = require('url'); //to parse url strings
@@ -489,4 +489,4 @@ io.on('connection', function (socket) {
 
 console.log(`Server Running at port ${PORT}  CNTL-C to quit`)
 console.log(`To Test:`)
-console.log(`Open several browsers to: http://localhost:3000/assignment3.html`)
+console.log(`Open several browsers to: https://localhost:3000/assignment3.html`)
