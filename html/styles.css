@@ -1,0 +1,21 @@
+/* an external style sheet
+
+   notice the use of c-style comments and not xhtml-style
+   comments
+   */
+  html {padding : 0; margin : 0; border : 0;}
+  body {color: orange; background-color: yellow; display:float; margin : 0}
+  table {color: orange; 
+         background-color: #000000;
+         }
+  caption {font-size: 24pt;
+           font-weight: bold;
+        font-family: Georgia "Courier New";
+        }
+        
+
+
+  #canvas1 {display:inline-block; padding : 0; margin : 0; border:0;} 
+  #canvas2 {display:inline-block; padding : 0; margin : 0; border:0;} 
+  
+  #canvascontainer {display:inline-block;}
